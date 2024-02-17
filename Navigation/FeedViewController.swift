@@ -2,7 +2,7 @@ import UIKit
 
 class FeedViewController: UIViewController {
     
-    var post = Post(title: "Новый пост")
+    var post = Post(title: "New post")
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,10 +22,8 @@ class FeedViewController: UIViewController {
     
     @objc func buttonAction(_ sender: UIButton) {
         let postViewController = PostViewController()
+        postViewController.title = post.title
         navigationController?.pushViewController(postViewController, animated: true)
     }
     
-    struct Post {
-        var title: String
-    }
 }
