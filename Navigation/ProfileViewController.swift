@@ -8,22 +8,19 @@
 import UIKit
 
 class ProfileViewController: UIViewController {
-
+    
+    let profileHeaderView = ProfileHeaderView()
+    let appearance = UINavigationBarAppearance()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        navigationController?.navigationBar.standardAppearance = appearance
+        navigationController?.navigationBar.scrollEdgeAppearance = appearance
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewWillLayoutSubviews() {
+        view.backgroundColor = .lightGray
+        title = "Profile"
+        profileHeaderView.frame = view.frame
+        view.addSubview(profileHeaderView)
     }
-    */
-
 }

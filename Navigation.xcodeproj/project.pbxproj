@@ -17,11 +17,12 @@
 		11CB49FE2B7C929600568BDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11CB49FC2B7C929600568BDE /* Main.storyboard */; };
 		11CB4A002B7C929800568BDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11CB49FF2B7C929800568BDE /* Assets.xcassets */; };
 		11CB4A032B7C929800568BDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11CB4A012B7C929800568BDE /* LaunchScreen.storyboard */; };
+		11F920872B99315D00023C93 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F920862B99315D00023C93 /* ProfileHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		11AC6B432B7D03B00033A79B /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
-		11AC6B452B7D03F80033A79B /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		11AC6B452B7D03F80033A79B /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = Navigation/ProfileViewController.swift; sourceTree = SOURCE_ROOT; };
 		11AC6B472B7D05B00033A79B /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		11AC6B492B7D05BC0033A79B /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		11CB49F32B7C929600568BDE /* Navigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Navigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -32,6 +33,7 @@
 		11CB49FF2B7C929800568BDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11CB4A022B7C929800568BDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		11CB4A042B7C929800568BDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11F920862B99315D00023C93 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,16 +69,25 @@
 				11CB49F62B7C929600568BDE /* AppDelegate.swift */,
 				11CB49F82B7C929600568BDE /* SceneDelegate.swift */,
 				11CB49FA2B7C929600568BDE /* ViewController.swift */,
+				11F920852B99313D00023C93 /* Profile */,
 				11CB49FC2B7C929600568BDE /* Main.storyboard */,
 				11CB49FF2B7C929800568BDE /* Assets.xcassets */,
 				11CB4A012B7C929800568BDE /* LaunchScreen.storyboard */,
 				11CB4A042B7C929800568BDE /* Info.plist */,
 				11AC6B432B7D03B00033A79B /* FeedViewController.swift */,
-				11AC6B452B7D03F80033A79B /* ProfileViewController.swift */,
 				11AC6B472B7D05B00033A79B /* PostViewController.swift */,
 				11AC6B492B7D05BC0033A79B /* InfoViewController.swift */,
 			);
 			path = Navigation;
+			sourceTree = "<group>";
+		};
+		11F920852B99313D00023C93 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				11AC6B452B7D03F80033A79B /* ProfileViewController.swift */,
+				11F920862B99315D00023C93 /* ProfileHeaderView.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,6 +168,7 @@
 				11AC6B462B7D03F80033A79B /* ProfileViewController.swift in Sources */,
 				11AC6B442B7D03B00033A79B /* FeedViewController.swift in Sources */,
 				11CB49F92B7C929600568BDE /* SceneDelegate.swift in Sources */,
+				11F920872B99315D00023C93 /* ProfileHeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
